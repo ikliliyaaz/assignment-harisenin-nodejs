@@ -1,0 +1,29 @@
+{
+  "name": "assignment-harisenin-nodejs",
+  "version": "1.0.0",
+  "description": "membuat backend dengan nodejs express",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "build": "node src/index.js",
+    "migrate": "knex migrate:latest --knexfile src/models/knexfile.js"
+  },
+  "author": "ikliliya",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "latest",
+    "eslint-config-airbnb-base": "latest",
+    "eslint-config-prettier": "latest",
+    "eslint-plugin-import": "latest",
+    "eslint-plugin-prettier": "latest",
+    "nodemon": "latest",
+    "prettier": "latest"
+  },
+  "dependencies": {
+    "cors": "latest",
+    "dotenv": "latest",
+    "express": "latest",
+    "knex": "^2.4.2",
+    "mysql2": "^3.1.2"
+  }
+}
